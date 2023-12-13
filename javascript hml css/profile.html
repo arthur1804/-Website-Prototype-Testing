@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Associação de Apicultores</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="profileTitle">
+        <h1>Seu Perfil</h1>
+    </div>
+    <div id="profileInfo">
+    </div>
+    <div id="profile-container">
+        <h2>Meu Perfil</h2>
+        <p>Nome: <span id="user-name">Seu Nome</span></p>
+        <p>Email: <span id="user-email">seuemail@example.com</span></p>
+        <button onclick="editProfile()">Editar Perfil</button>
+    </div>
+    <div id="edit-profile-container" style="display: none;">
+        <h2>Editar Perfil</h2>
+        <label for="edit-name">Novo Nome:</label>
+        <input type="text" id="edit-name">
+        <label for="edit-email">Novo Email:</label>
+        <input type="text" id="edit-email">
+        <button onclick="saveChanges()">Salvar Alterações</button>
+    </div>
+</body>
+</html>

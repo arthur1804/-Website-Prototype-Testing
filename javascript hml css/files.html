@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivos - Associação de Apicultores</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="filesTitle">
+        <h1>Arquivos da Associação</h1>
+    </div>
+    <div id="files-container">
+        <h2>Meus Arquivos</h2>
+        <ul>
+            <li><a href="#" onclick="viewFile('apiario1.txt')">Anotações do Apiário 1</a></li>
+            <li><a href="#" onclick="viewFile('apiario2.txt')">Anotações do Apiário 2</a></li>
+            <li><a href="#" onclick="viewFile('instrucoes.txt')">Instruções Importantes</a></li>
+        </ul>
+        <div id="file-content"></div>
+    </div>
+    <div id="uploadContainer">
+        <input type="file" id="fileInput" accept=".pdf, .doc, .docx">
+        <button id="uploadButton" onclick="uploadFile()">Enviar Arquivo</button>
+    </div>
+</body>
+</html>

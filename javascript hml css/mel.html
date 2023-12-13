@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel de Qualidade</title>
+    <link rel="stylesheet" href="mel.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Mel de Qualidade</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tipos de Mel</h2>
+            <p>Descubra a variedade de sabores e aromas que nossos apicultores oferecem:</p>
+            <ul id="melList">
+            </ul>
+        </section>
+        <section>
+            <h2>Dicas para Produção</h2>
+            <p>Explore práticas que garantem a produção de mel de alta qualidade:</p>
+            <ol>
+                <li>Escolha de Localização: Posicione as colmeias em áreas ricas em floração para diversificar os sabores do mel.</li>
+                <li>Cuidado com as Abelhas: Mantenha um ambiente saudável para as abelhas, garantindo colônias fortes e produtivas.</li>
+                <li>Extração Adequada: Utilize métodos cuidadosos para extrair o mel, preservando suas propriedades naturais.</li>
+            </ol>
+        </section>
+        
+        <div id="addMelModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAddMelModal()">&times;</span>
+                <h2>Adicionar Novo Mel</h2>
+                <form onsubmit="addMel(); return false;">
+                    <label for="melName">Nome do Mel:</label>
+                    <input type="text" id="melName" required>
+                    <label for="melDescription">Descrição:</label>
+                    <textarea id="melDescription" required></textarea>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="graficos">
+            <figure>
+                <img src="./imagens/melgrafico.bmp" alt="Gráfico 1">
+                <figcaption>Produção de Mel por Mês</figcaption>
+            </figure>
+            <figure>
+                <img src="./imagens/melcomp.jpg" alt="Gráfico 2">
+                <figcaption>Comparação Mensal de Tipos de Mel</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

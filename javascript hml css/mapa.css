@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #2e7d32;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+#map-instructions {
+  margin-top: 10px;
+  color: #d1cbcb;
+  font-style: italic;
+}
+
+#map:hover {
+  border: 2px solid #558b2f;
+}
+
+#map:active {
+  border: 2px solid #2e7d32;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: 10px;
+  }
+
+  #map {
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  #map-instructions {
+    margin-top: 5px;
+  }
+}

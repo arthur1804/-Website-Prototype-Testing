@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação de Apicultores - Boas-Vindas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="welcome.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="notifications.html">Notificações</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="title">
+        <h1>APICULTORES RN</h1>
+    </div>
+    <div id="welcome" class="page">
+        <div class="circle">
+            <img src="./imagens/abelha.png" alt="">
+        </div>
+        <h1>Bem-vindo à Associação de Apicultores!</h1>
+        <p>Escolha uma opção abaixo:</p>
+        <button onclick="showLoginForm()">Entrar</button>
+        <button onclick="showRegisterForm()">Cadastrar</button>
+
+        <!-- Adicionando os elementos de formulário e conteúdo principal -->
+        <div id="loginForm" style="display: none;">
+            <!-- Conteúdo do formulário de login -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button onclick="validateLoginForm()">Login</button>
+        </div>
+
+        <div id="registerForm" style="display: none;">
+            <!-- Conteúdo do formulário de cadastro -->
+            <label for="newUsername">New Username:</label>
+            <input type="text" id="newUsername" name="newUsername">
+            <label for="newEmail">New Email:</label>
+            <input type="email" id="newEmail" name="newEmail">
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword">
+            <label for="newCpf">New CPF:</label>
+            <input type="text" id="newCpf" name="newCpf">
+            <label for="newCep">New CEP:</label>
+            <input type="text" id="newCep" name="newCep">
+            <button onclick="validateRegisterForm()">Register</button>
+        </div>
+
+        <div id="mainContent" style="display: none;">
+
+            <p>Bem-vindo! Conteúdo principal após o login ou cadastro.</p>
+        </div>
+    </div>
+</body>
+
+</html>

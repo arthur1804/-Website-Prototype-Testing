@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação de Apicultores - Informações</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="left-icon">
+            <i class="fas fa-sun"></i>
+        </div>
+        <div class="right-icon">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <div id="combined-search">
+        <button type="button" onclick="toggleSearch()">
+            <i class="fas fa-search"></i> Pesquisar
+        </button>
+        <input type="text" id="searchInput" name="search" style="display: none;">
+        <button id="searchButton" onclick="search()" style="display: none;">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+    <div id="search-results"></div>
+    <div id="circle-options">
+        <a href="mel.html" class="circle-option">
+            <div class="circle-icon">🍯</div>
+            <p>Mel</p>
+        </a>
+        <a href="apiarios.html" class="circle-option">
+            <div class="circle-icon">🐝</div>
+            <p>Apiários</p>
+        </a>
+        <a href="mapa.html" class="circle-option">
+            <div class="circle-icon"><i class="fas fa-map-marked-alt"></i></div>
+            <p>Mapa</p>
+        </a>
+        <a href="relatorios.html" class="circle-option">
+            <div class="circle-icon"><i class="fas fa-clipboard-list"></i></div>
+            <p>Relatórios</p>
+        </a>
+    </div>
+    <div id="notification-bar">
+        <p>Comece agora seus primeiros registros no app!</p>
+        <div class="divider"></div>
+        <div class="timestamp">
+            <i class="far fa-clock"></i>
+            <span id="date-time"></span>
+        </div>
+    </div>
+    <section>
+        <h2>Sobre nós</h2>
+        <p>Somos uma comunidade dedicada à prática da apicultura, comprometida com a produção sustentável de mel de alta qualidade. Nossa missão é promover a troca de conhecimento entre apicultores, incentivar boas práticas de apicultura e contribuir para o desenvolvimento sustentável da nossa região. Junte-se a nós na jornada doce e recompensadora da apicultura!</p>
+    </section>
+    <section>
+        <h2>Nossos Apicultores</h2>
+        <p>Conheça os incríveis apicultores que fazem parte da nossa associação. Cada membro traz consigo uma paixão única pela apicultura, contribuindo para o crescimento e sucesso coletivo. Nossa comunidade é composta por indivíduos dedicados, comprometidos em compartilhar experiências, superar desafios e promover a apicultura como um modo de vida sustentável.</p>
+    </section>
+    <section>
+        <h2>Eventos</h2>
+        <p>Fique por dentro dos próximos eventos relacionados à apicultura. De workshops educativos a feiras de mel, nossa associação oferece oportunidades para aprender, conectar-se e celebrar a paixão pela apicultura. Junte-se a nós em nossos eventos e faça parte de uma comunidade vibrante que valoriza a preservação das abelhas e a produção responsável de mel.</p>
+    </section>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="notifications.html">Notificações</a></li>
+                <li><a href="files.html">Files</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

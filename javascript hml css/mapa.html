@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mapa.css">
+  <title>Mapa da Apicultura</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Mapa da Apicultura</h1>
+
+<div id="map"></div>
+
+<script>
+  var apiarios = [
+    { nome: 'Apiário 1', lat: -23.5505, lng: -46.6333, descricao: 'Informações sobre Apiário 1.' },
+  ];
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10, 
+      center: { lat: -23.5505, lng: -46.6333 },
+    });
+
+    
+    apiarios.forEach(function(apiario) {
+      var marker = new google.maps.Marker({
+        position: { lat: apiario.lat, lng: apiario.lng },
+        map: map,
+        title: apiario.nome,
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content: apiario.descricao,
+      });
+
+      marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+      });
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh0LOJm4siFS5h58PyWzO-Owu_7GWzDG0&callback=initMap" 
+async defer></script>
+
+</body>
+</html>
